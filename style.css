@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    background-color: #F2E9E7;
+    color: #ffffff;
+    background-image: url(img/fundo3.jpg);
+}
+
+.container{
+    margin-top: 8%;
+    width: 35rem;
+    height: 22rem;
+    background-color: #836bd4;
+    border-radius: 3rem; 
+    box-shadow: rgba(0, 0, 0, 0.25) 15px 10px 20px;
+}
+
+h1{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+}
+
+.input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    transition: 0.3s;
+    margin-bottom: 1.5rem;
+}
+   
+.input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #dbdbdb,
+           inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+}
+
+.button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.2rem 1rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    font-size: 17px;
+    overflow: hidden;
+    background: #beff74;
+    color: ghostwhite;
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+    margin-left: 1rem;
+}
+   
+.button:hover {
+    color: #410392;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 96.3%;
+    height: 2.5rem;
+    background-color: #836bd4;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
