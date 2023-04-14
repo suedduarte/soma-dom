@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="icon" href="img/icons.png">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/iconcr.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soma / DOM</title>
+    <title>Cronômetro</title>
 </head>
 <body>
-    <div class="container">
-    <h1>Somando com o DOM</h1>
-<br>
-    <input type="number" name="valor1" id="valor1" class="input"> +
-    <input type="number" name="valor2" id="valor2"class="input" >
-    <input type="button" value="=" onclick="somar()" class="button" >
 
-    <div id="resp">Resposta</div>
-</div>
+    <div class="cronometro">
+    <h1>Cronômetro</h1>
 
-<div id="footer">
-    <span>By: Sued Duarte | Soma com o DOM | HTML, CSS e JavaScript</span>
-</div>
+    <p><span id="seconds">00</span>:<span id="tens">00</span></p>
 
-    <script>
-        function somar(){
-        var v1 = window.document.getElementById('valor1');
-        var v2 = window.document.querySelector('input#valor2');
-        var resp = window.document.getElementById('resp');
+    <button id="button-start"><img src="img/play.png" alt=""></button>
+    <button id="button-stop"><img src="img/stop.png" alt=""></button>
+    <button id="button-reset"><img src="img/clean.png" alt=""></button>
+    </div>
 
-        var n1 = Number(v1 .value);
-        var n2 = Number(v2.value);
-        var resultado = n1 + n2;
+    <div id="footer">
+        <p>By: Sued Duarte | Cronômetro | HTML, CSS e JavaScript</p>
+        <div  class="icons">
+            <a href="https://instagram.com/sued_duarte"><img src="img/instagram.png" alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/sued-duarte-4111a3270"><img src="img/linkedin.png" alt="linkedin"></a>
+            <a href="https://github.com/suedduarte"><img src="img/github.png" alt="github"></a>
+        </div>
+    </div>
 
-        resp.innerHTML = `A soma entre ${n1} e a ${n2} é igual a ${resultado}.` //placeholder
-    }
-
-
-
-    </script>
-
-
-
-
-
-    
 </body>
 </html>
