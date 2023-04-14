@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 *{
     margin: 0;
     padding: 0;
@@ -9,69 +11,86 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-size: 1.4rem;
-    background-color: #F2E9E7;
-    color: #ffffff;
-    background-image: url(img/fundo3.jpg);
+    font-size: 3rem;
+    color:#FFEBC2;
+    background-image: url(img/fundo4.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
 }
 
-.container{
-    margin-top: 8%;
-    width: 35rem;
-    height: 22rem;
-    background-color: #836bd4;
-    border-radius: 3rem; 
+
+.cronometro{
+    margin-top: 13%;
+    background-color: #698faa;
     box-shadow: rgba(0, 0, 0, 0.25) 15px 10px 20px;
+    border-radius: 2rem;
+    width: 25rem;
+    height: 15rem;
 }
 
 h1{
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: 2.5rem;
-    color: #ffffff;
-    text-align: center;
+    color: #FFEBC2;
 }
 
-.input {
-    border: none;
-    padding: 1rem;
-    border-radius: 1rem;
-    background: #e8e8e8;
-    transition: 0.3s;
-    margin-bottom: 1.5rem;
-}
-   
-.input:focus {
-    outline-color: #e8e8e8;
-    background: #e8e8e8;
-    box-shadow: inset 20px 20px 60px #dbdbdb,
-           inset -20px -20px 60px #ffffff;
-    transition: 0.3s;
+span{
+    font-size: 3rem;
+    font-family: 'digital-clock-font';  
 }
 
-.button {
-    outline: none;
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('put_the_location_to_your_font.ttf or .otf');
+}
+
+
+button{
+    appearance: none;
+    background-color: transparent;
+    border: 0.15em solid #FFEBC2;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: #FFEBC2;
     cursor: pointer;
-    border: none;
-    padding: 0.2rem 1rem;
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    position: relative;
     display: inline-block;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    font-size: 17px;
-    overflow: hidden;
-    background: #beff74;
-    color: ghostwhite;
-    position: relative;
-    z-index: 10;
-    transition: color 0.4s;
-    margin-left: 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0.5rem;
+    min-height: 3em;
+    min-width: 0;
+    outline: none;
+    padding: 0.5em 0.5em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    margin-top: 1rem;
+}
+
+button img{
+    width: 2rem;
+    height: 2rem;
+} 
+   
+button:disabled {
+    pointer-events: none;
 }
    
-.button:hover {
-    color: #410392;
+button:hover {
+    color: #fff;
+    background-color: #1e5b75;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+   
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
 }
 
 #footer{
@@ -79,7 +98,29 @@ h1{
     bottom: 0;
     width: 96.3%;
     height: 2.5rem;
-    background-color: #836bd4;
-    font-size: 2rem;
-    padding: 1.5rem;
+    background-color: #698faa;
+    font-size: 0.2rem;
+    padding: 3rem;
 }
+
+#footer p{
+    font-size: 1.5rem;
+    margin-top: -1rem;
+}
+
+.icons{
+    margin: 1rem;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.icons img{
+    width: 38px;
+    height: 35px;
+    padding-left: 1rem;
+}
+
+.icons img:hover{
+    opacity: 0.8;
+}
+
